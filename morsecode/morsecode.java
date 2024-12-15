@@ -162,7 +162,7 @@ public class morsecode {
 	public String toString() {
 		//System.out.println("\n"+isMorse());
 		if (input.equals("")) return "A: .-\tB: -...\tC: -.-.\tD: -..\tE: .\tF: ..-.\tG: --.\tH: ....\tI: ..\tJ: .---\tK: -.-\tL: .-..\tM: --\nN: -.\tO: ---\tP: .--.\tQ: --.-\tR: .-.\tS: ...\tT: -\tU: ..-\tV: ...-\tW: .--\tX: -..-\tY: -.--\tZ: --..\n1: .----\t2: ..---\t3: ...--\t4: ....-\t5: .....\t6: -....\t7: --...\t8: ---..\t9: ----.\t0: -----";
-		if (isMorse()) { return input.substring(0, input.length() - 2) + "is morse code for " + toText() + "(unrecognized characters ignored)"; }
+		if (isMorse()) { return input.substring(0, input.length() - 2) + " is morse code for " + toText() + " (unrecognized characters ignored)"; }
 		else { return input.substring(0, input.length() - 2) + "in morse code is " + toMorse() + "(non-letter/digit characters ignored)"; }
 	}
 }
